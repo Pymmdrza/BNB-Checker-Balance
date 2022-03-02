@@ -20,12 +20,14 @@ stpcc = str(input('|||||||[     SLEEP TIME BETWEEN EACH REVIEW  > '))
 while True:
     tc = datetime.datetime.now()
     bnbadd = str(addcc)
-    apibnb1 = "&apikey=[INSERT YOUR API ON BscScan.io]"
-    apibnb2 = "&apikey=[INSERT YOUR API ON BscScan.io]"
-    apibnb3 = "&apikey=[INSERT YOUR API ON BscScan.io]"
-    apibnb4 = "&apikey=[INSERT YOUR API ON BscScan.io]"
-    apibnb5 = "&apikey=[INSERT YOUR API ON BscScan.io]"
-    apibnb6 = "&apikey=[INSERT YOUR API ON BscScan.io]"
+    # Start Details API KEY Bscscan ======================================        
+    apibnb1 = "&apikey=[INSERT YOUR API ON BscScan.io]" # Your BscScan API
+    apibnb2 = "&apikey=[INSERT YOUR API ON BscScan.io]" # Your BscScan API
+    apibnb3 = "&apikey=[INSERT YOUR API ON BscScan.io]" # Your BscScan API
+    apibnb4 = "&apikey=[INSERT YOUR API ON BscScan.io]" # Your BscScan API
+    apibnb5 = "&apikey=[INSERT YOUR API ON BscScan.io]" # Your BscScan API
+    apibnb6 = "&apikey=[INSERT YOUR API ON BscScan.io]" # Your BscScan API
+    # Start Details API KEY Bscscan ======================================        
     mylist1 = [str(apibnb1), str(apibnb2), str(apibnb3), str(apibnb4), str(apibnb5), str(apibnb6)]  # 6 API KEYS
     apikeysbnb = random.choice(mylist1)
     blocs1 = requests.get("https://api.bscscan.com/api?module=account&action=balance&address=" + bnbadd + apikeysbnb)
